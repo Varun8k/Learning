@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn with us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+            <hr class="my-4">
+            <small class="text-muted">By clicking Login, you agree to the terms of use.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign-up modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h4 class="modal-title" id="exampleModalLabel">Sign-up for free</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header  pb-2 border-bottom-0">
+            </div>
+
+            <div class="modal-body p-4 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="First name">
+                  <label for="floatingInput">First name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Last name">
+                  <label for="floatingInput">Last name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                <hr class="my-4">
+                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  Sign up with Facebook
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#github"></use>
+                  </svg>
+                  Sign up with GitHub
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="p-3 text-bg-dark">
+    <nav class="navbar navbar-expand-lg bg-light  navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img class="bi me-2" width="40" height="32" src="pngwing.com.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/Learning.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                free study material
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href=""></a></li>
+                <li><a class="dropdown-item"
+                    href="https://drive.google.com/file/d/1Q_I6H8qBTTIFMHEPbbpKVrg_E5N6cFtg/view?usp=sharing">C++</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://programmingwithmosh.com/wp-content/uploads/2019/07/Java-Cheat-Sheet.pdf">Java</a></li>
+                <li><a class="dropdown-item"
+                    href="https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf">Python</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetHTML.pdf">Html</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf">CSS</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf">JS</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2 rounded-3" data-bs-toggle="modal"
+              data-bs-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-warning rounded-3" data-bs-toggle="modal"
+              data-bs-target="#signupModal">Sign-up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pexels-zen-chung-5745183.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <!-- Q&N -->
+  <div class="p-5 rounded">
+    <div class="col-sm-8 py-5 mx-auto">
+      <h1 class="display-5 fw-bold  fs-1">DO YOU HAVE ANY QUESTIONS OR REQUESTS?</h1>
+      <p class="fs-5">FREQUENTLY ASKED QUESTIONS</p>
+
+      <h5 class="fw-bol mt-5">What do Learning courses include?</h5>
+      <p class="fs-6">Each Learning course is created, owned and managed by the instructor(s). The foundation of each
+        Learning course are its lectures, which can include videos, slides, and text. In addition, instructors can add
+        resources and various types of practice activities, as a way to enhance the learning experience of students.
+      </p>
+      <hr class="my-3">
+      <h5 class="fw-bol ">Can i visit the institute ? </h5>
+      <p class="fs-6">Unfortunately it is not possible to visit our institute, because it is not open to the public.</p>
+      <hr class="my-3">
+      <h5 class="fw-bol">Do I have to start my learning course at a certain time? And how long do I have to complete it?
+      </h5>
+      <p class="fs-6">There are no deadlines to begin or complete a course. </p>
+      <hr class="my-3">
+      <h5 class="fw-bol">How can I pay for a course?</h5>
+      <p class="fs-6">Leatning supports several different payment methods, depending on your account country and
+        location.</p>
+      <hr class="my-3">
+      <h5 class="fw-bol">How can i apply to Learning.com?</h5>
+      <p class="fs-6">Please apply under the following </p>
+    </div>
+  </div>
+  <!-- Solution form -->
+  <div class="container d-flex justify-content-center">
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Solution</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+          <div class="col-md-5">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country" required="">
+              <option value="">Choose...</option>
+              <option>India</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required="">
+              <option value="">Choose...</option>
+              <option>Punjab</option>
+              <option>Delhi</option>
+              <option>Ludiana</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+        <div class="my-4">
+          <label for="validationTextarea" class="form-label">Textarea</label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"
+            required=""></textarea>
+          <div class="invalid-feedback">
+            Please enter a message in the textarea.
+          </div>
+        </div>
+
+        <div class="my-3"></div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address">
+          <label class="form-check-label" for="same-address">I have read, understood and agree to the Data
+            Protection Notice for this site.</label>
+        </div>
+        <div class="my-5 "></div>
+        <button class="w-100 btn btn-primary btn-lg mb-5" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <img class="bi" width="30" height="24" src="pngwing.com.png">
+          </img>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Learning.com</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+
+        <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="24" height="24"
+              src="twitter-logo-vector-png-clipart-1.png">
+            </img></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="24" height="24"
+              src="900px-Instagram_icon.png">
+            </img></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="24" height="24"
+              src="Facebook_Logo_(2019).png">
+            </img></a></li>
+      </ul>
+    </footer>
+    <div>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to Learning.com,Heaven for Programmers">
+  <title>Learn with us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+            <hr class="my-4">
+            <small class="text-muted">By clicking Login, you agree to the terms of use.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign-up modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h4 class="modal-title" id="exampleModalLabel">Sign-up for free</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header  pb-2 border-bottom-0">
+            </div>
+
+            <div class="modal-body p-4 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="First name">
+                  <label for="floatingInput">First name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Last name">
+                  <label for="floatingInput">Last name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                <hr class="my-4">
+                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  Sign up with Facebook
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#github"></use>
+                  </svg>
+                  Sign up with GitHub
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="p-3 text-bg-dark ">
+    <nav class="navbar navbar-expand-lg bg-light  navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img class="bi me-2" width="40" height="32" src="pngwing.com.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Learning.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                free study material
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href=""></a></li>
+                <li><a class="dropdown-item"
+                    href="https://drive.google.com/file/d/1Q_I6H8qBTTIFMHEPbbpKVrg_E5N6cFtg/view?usp=sharing">C++</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://programmingwithmosh.com/wp-content/uploads/2019/07/Java-Cheat-Sheet.pdf">Java</a></li>
+                <li><a class="dropdown-item"
+                    href="https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf">Python</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetHTML.pdf">Html</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf">CSS</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf">JS</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2 rounded-3" data-bs-toggle="modal"
+              data-bs-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-warning rounded-3" data-bs-toggle="modal"
+              data-bs-target="#signupModal">Sign-up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel-fade carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pexels-olia-danilevich-4974912.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Welcome to Learning</h3>
+          <p>Great learning , Development and Trends</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-pixabay-247791.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Explore our best cources</h3>
+          <p>Know more about our courses. Book a free counselling session..</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-negative-space-160107.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+          <h3>Learning blog</h3>
+          <p>Trending Learning blogs.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container mt-5 pt-5">
+
+    <h1 class="text-center">Programming Cources</h1>
+    <div class="album py-5">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="1522635669452_11.png" class="bd-placeholder-img card-img-top " width="100%" height="218">
+              <div class="card-body shadow">
+                <h5 class="card-text">C++ For Programmers</h5>
+                <p class="card-text">Learn and Master Modern C++ From Beginning to Advanced.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Java.jpg" class="bd-placeholder-img card-img-top" width="100%" height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text">Advanced Java Programming</h5>
+                <p class="card-text">Take Your Java Programming Skills To The Next Level. Become Proficient In Java
+                  Programming.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="wp4850110-python-language-wallpapers.png" class="bd-placeholder-img card-img-top" width="100%"
+                height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text">The Complete Python Course </h5>
+                <p class="card-text">Learn A-Z from the basics, to advanced topics like Python GUI, Python Data
+                  Analysis, and more!.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="wp4521294-c-programming-language-wallpapers.jpg" class="bd-placeholder-img card-img-top"
+                width="100%" height="218">
+              <div class="card-body shadow">
+                <h5 class="card-text">C++ From Beginner to Expert </h5>
+                <p class="card-text">Master the C Programming language in 2022 by Building exciting projects from
+                  Beginners to Advanced Level students.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text">HTML CSS JavaScript, Web Design Course </h5>
+                <p class="card-text">Explore how to build amazing interactive and dynamic websites using HTML - CSS -
+                  JavaScript .</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="wp2465962-javascript-wallpapers.png" class="bd-placeholder-img card-img-top" width="100%"
+                height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text">The Complete Node.js Developer Course </h5>
+                <p class="card-text">Learn Node.js by building real-world applications with Node JS, Express, MongoDB,
+                  Jest, and many more.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Angular-Learning.jpg" class="bd-placeholder-img card-img-top" width="100%" height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text">The Complete Angular Course: Beginner to Advanced</h5>
+                <p class="card-text">The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app
+                  with Angular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="maxresdefault.jpg" class="bd-placeholder-img card-img-top" width="100%" height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text">Modern React with Redux </h5>
+                <p class="card-text">Learn how to build and launch React web applications using React, Redux, Webpack,
+                  React-Router, and more!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="phplogo.jpg" class="bd-placeholder-img card-img-top" width="100%" height="218">
+
+              <div class="card-body shadow">
+                <h5 class="card-text"> Become a PHP Master </h5>
+                <p class="card-text"> Learn everything you need to become a professional PHP developer with practical
+                  exercises & projects.Every line of code explained in detail.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <img class="bi" width="30" height="24" src="pngwing.com.png">
+          </img>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Learning.com</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+
+        <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="24" height="24"
+              src="twitter-logo-vector-png-clipart-1.png">
+            </img></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="24" height="24"
+              src="900px-Instagram_icon.png">
+            </img></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img class="bi" width="24" height="24"
+              src="Facebook_Logo_(2019).png">
+            </img></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
